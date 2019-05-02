@@ -27,7 +27,7 @@ function renderGallery($conDB, $id)
             } else {
                 $url = './photo.php?click=true&id=' . $row['id'];
                 $onclick = 'onclick="location.href=\'' . $url . '\'; return false;"';
-                echo '<a href="' .  $url . '" target="_blank"' . $onclick . '>';
+                echo '<a href="' . $url . '" target="_blank"' . $onclick . '>';
                 echo '<img class="img-responsive" src="' . $fileThumb . '"/></a>';
             }
 

@@ -21,5 +21,5 @@ closeConnection();
 ?>
 
 <center>
-<a href="admin.php">Вход в админку</a>
+    <a href="admin.php">Вход в админку</a>
 </center>

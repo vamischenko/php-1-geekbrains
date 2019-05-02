@@ -1,3 +1,3 @@
 <?php
-	include VIEW.'/errors/404.php';
+include VIEW . '/errors/404.php';
 ?>

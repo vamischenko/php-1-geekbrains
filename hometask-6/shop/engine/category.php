@@ -7,7 +7,7 @@ function selectCategory()
     $html = '<select name="category_id"><option disabled>Выберите категорию</option>';
     $categories = queryAll("SELECT * FROM category");
     foreach ($categories as $category) {
-        $html .= '<option value="' .$category["id"] . '">' .$category["name"] . '</option>';
+        $html .= '<option value="' . $category["id"] . '">' . $category["name"] . '</option>';
     }
     $html .= '</select>';
     return $html;

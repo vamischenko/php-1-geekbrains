@@ -1,12 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
 .main {
-   margin-left: auto;
-   margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .photo {
@@ -17,7 +17,7 @@
 }
 
 .bigphoto {
-    background-color:azure;
+    background-color: azure;
     width: 1200px;
     height: 750px;
     border: solid 1px black;
@@ -31,7 +31,7 @@
 }
 
 .smallphoto {
-    
+
     width: 400px;
     height: 250px;
     border: solid 1px black;

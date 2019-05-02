@@ -1,26 +1,31 @@
 <?php
-function getConnection(){
+function getConnection()
+{
     static $conn = null;
-    if(!$conn){
+    if (!$conn) {
         $config = include CONFIG_DIR . "db.php";
         $conn = mysqli_connect($config["host"], $config["user"], $config["password"], $config["db"]);
     }
-   return $conn;
+    return $conn;
 }
 
-function executeQuery($sql){
+function executeQuery($sql)
+{
     return mysqli_query(getConnection(), $sql);
 }
 
-function queryAll($sql){
+function queryAll($sql)
+{
     return mysqli_fetch_all(executeQuery($sql), MYSQLI_ASSOC);
 }
 
-function queryOne($sql){
+function queryOne($sql)
+{
     return queryAll($sql)[0];
 }
 
-function closeConnection(){
+function closeConnection()
+{
     mysqli_close(getConnection());
 }
 
